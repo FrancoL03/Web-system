@@ -1,0 +1,259 @@
+
+
+body{
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif,  Times, serif;
+    background: #eee url("backgrounds/forest_01.jpg") no-repeat fixed center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: unset;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(130, 162, 173);
+    display: block;
+    text-align: center;
+    position:fixed;
+    top:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section1{
+    margin-top: 100px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Split the screen in half */
+.leftHalf{
+    border-radius: 10px;
+    left:0;
+    width: 50%;
+    height: 300px;
+    background: rgba(130, 130, 230, 0.8); /* browsers */
+    text-align: center;
+}
+.rightHalf {
+    border-radius: 10px;
+    right: 0;
+    width: 50%;
+    height: 300px;
+    background: rgba(130, 130, 230,0.8);
+    text-align: center;
+}
+
+/* left half*/
+.leftHalf figure{
+    width:80%;
+    height:80%;
+    text-transform: uppercase;  
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+.leftHalf figure img{
+    width:45%;
+    height:70%;
+    border: 5px solid white;
+    border-radius: 5%;
+    box-shadow: gray 3px 3px 10px;
+    position: center;
+
+}
+.leftHalf figure figcaption{
+    height: 25px;
+    color: black;
+    font-family: Helvetica;
+    text-align:center;
+}
+
+/* right half */
+
+.bar{
+    position: absolute;
+    width: 7px;
+    height: 300px;
+    background: rgb(129, 162, 172);
+    top:120px;
+    left:49.8%;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: lowercase; 
+}
+
+  /* Login */
+.container{
+    width: 60%;
+    height:70%;
+    border-radius: 3%;
+    margin: 0 auto;
+    background: rgb(129, 162, 172);
+    margin-top: 50px;
+
+    border: 2.5px solid;
+    border-radius: 6px;
+    border-width: 0px 3px 3px 0px;
+    border-color:rgb(46, 89, 155);
+}
+.container form{
+    margin-top: 0px;   
+}
+.container img{
+    width: 63px;
+    height: 60px;
+    margin-top: -30px;
+
+    background: black;
+    border: 3px solid;
+    border-radius: 50%;
+    border-width: 0px 3px 3px 0px;
+    border-color:grey;
+    
+}
+.form-input
+{
+    margin:auto;
+    margin-top: 20px;   
+    height: 30px;
+    width: 82%;
+    background: #fff;
+    border-radius: 8px;
+    position: center;
+    margin-bottom: 15px;
+    text-align: center;
+
+    border: 2.5px solid;
+    border-radius: 6px;
+    box-shadow: gray 3px 3px 10px;
+    border-width: 0px 3px 3px 0px;
+    border-color:rgb(46, 89, 155);
+    transition: 0.5s;
+    overflow: auto;
+}
+.div_password:focus-within {
+    background: rgb(234, 234, 241);
+  }
+input[type="text"],input[type="password"]{
+    height: 15px;
+    width: 75%;
+    font-size: 18px;
+    margin-top: 5px;
+    background-color: #fff;
+    border:none;
+    transition: 0.5s;
+}
+.input_username:focus{
+    outline: none;
+}
+.input_password:focus{
+    background-color: rgb(234, 234, 241);
+    outline: none;
+}
+/* Autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+.icon{
+   margin-left: -5%;
+   margin-top: 6px;
+   color: rgb(8,167,235);    
+}
+
+/* Scroll bar (if too much content)*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+    background-color:rgb(255, 250, 240,0.8);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(129, 162, 172);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+    background-color: rgb(6,125,176);
+  }
+  ::-webkit-scrollbar-corner { 
+    background: transparent;   
+}
+  
+.btn-login{
+    margin-top: 0px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(8,167,235);
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+    outline:none;
+    position: relative;
+    left: 0px;
+    
+    border: 2.5px solid;
+    border-radius: 6px;
+    box-shadow: gray 3px 3px 10px;
+    border-width: 0px 3px 3px 0px;
+    border-color:rgb(46, 89, 155);
+    transition: 0.6s;
+}
+.btn-login:hover {
+    opacity: 1;
+    background-color: rgb(6,125,176);
+    box-shadow: 0 0 10px #1070ff;
+    
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(8,167,235);
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: rgb(6,125,176);
+}
+
+  /* Footer */
+footer{
+    width:100% ;
+    height: 30px;
+    background: rgb(129, 162, 172);
+    color: white;
+    font-size: 15px;
+    position:fixed;
+    text-align: center;
+    bottom:0px;
+}
